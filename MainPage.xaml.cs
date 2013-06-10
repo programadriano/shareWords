@@ -32,7 +32,6 @@ namespace wp7ShareWords
             this.Loaded += new RoutedEventHandler(MainPage_Loaded);
         }
 
-
         public void CategoriasStart()
         {
             using (var ctx = new wp7ShareWordsDataContext(conn))
