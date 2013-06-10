@@ -58,7 +58,7 @@ namespace wp7ShareWords
 
         private void fb_Click(object sender, EventArgs e)
         {
-           
+
             ShareStatusTask shareLinkTask = new ShareStatusTask();
             shareLinkTask.Status = ContentText.Text;
             //shareLinkTask.Message = ContentText.Text;
@@ -67,9 +67,9 @@ namespace wp7ShareWords
 
         private void twitter_Click(object sender, EventArgs e)
         {
-            ShareLinkTask shareLinkTask = new ShareLinkTask();
-            shareLinkTask.LinkUri = new Uri("http://www.windowsphonegeek.com", UriKind.Absolute);
-            shareLinkTask.Message = "Sample Twitter message!";
+            ShareStatusTask shareLinkTask = new ShareStatusTask();
+            // shareLinkTask.Title = this.PageTitle.Text;
+            shareLinkTask.Status = ContentText.Text;
             shareLinkTask.Show();
         }
     }
